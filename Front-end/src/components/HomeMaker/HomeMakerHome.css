@@ -1,0 +1,103 @@
+#sample{
+    background-color: gray;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 500px;
+    margin-right: 550px;
+    margin-bottom: 450px;
+    background-image: url(chef.gif);
+    background-repeat: no-repeat;
+    margin-bottom: 150px;
+    opacity: 2px;
+    color: darkorchid;
+   
+}
+
+/* #sample1{
+    background-image: url(walking-chef.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+/* #full{
+    background-image: url(walking-chef.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+} */
+ 
+td,th{
+    border: 1px solid purple;
+   padding: 8px;
+   margin-left: 50px;
+   color: black;
+}
+/*
+
+.table table-bordered table-striped{
+    margin-right: auto;
+}*/
+
+#center{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-style:normal;
+    
+
+} 
+
+.profile-table td,tr{
+    border: 0ch;
+    color: black;
+    text-align: left;
+    font-style: italic;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}
+.profile-table{
+    margin-left:200px;
+    margin-right: auto;
+    margin-bottom: 100px;
+    font-family:'Courier New', Courier, monospace;
+    font-style:normal;
+    
+}
+
+.gridd{
+    background-color: gray;
+    margin-top: 80px;
+    margin-left: 500px;
+    margin-right: 550px;
+    margin-bottom: 450px;
+    height: fit-content;
+    width: fit-content;
+
+    background-image: url(profile-new.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* .profgrid{
+    top: 0ch;
+    color: rgb(230, 129, 129);
+    text-align: center;
+    
+} */
+
+#prof{
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: rgb(163, 35, 35);
+}
+
+

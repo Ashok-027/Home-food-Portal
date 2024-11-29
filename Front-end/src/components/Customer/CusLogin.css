@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+body {
+    margin: 0;
+    background-image: url('/images/loginimage.jpg');
+    background-size:100%;
+    background-repeat:no-repeat;
+    
+  }
+
+.MuiGrid-root {
+    padding-top: 50px;
+   
+}

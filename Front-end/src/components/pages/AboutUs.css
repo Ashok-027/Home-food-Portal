@@ -1,0 +1,39 @@
+.Title {
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+    color: red;
+  }
+  /*.container  pb-5{
+    background-image: url("src/component/aboutimage.png");
+    background-size: cover;
+    height: 100vh;
+    margin-top: 20px;
+}*/
+#about{
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 15px;
+}
+#sample{
+    margin-top: 100px;
+    color: rgb(2, 12, 19);
+    text-align: center;
+}
+#sample1{
+    margin-top: 50px;
+}
+.container{
+    text-align: center;
+    color: blue;
+    background-color: aliceblue;
+}
+.about-us {
+    background-image: url('/images/aboutusimage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+  }
