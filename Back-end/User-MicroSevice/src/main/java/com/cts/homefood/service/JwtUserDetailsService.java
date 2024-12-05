@@ -1,6 +1,7 @@
 package com.cts.homefood.service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -46,5 +47,18 @@ public class JwtUserDetailsService implements UserDetailsService {
 	{
 		int uid=userDao.get_uid(username);
 		return uid;
+	}
+	
+	public DAOUser getProfile(long id) {
+		return userDao.findById(id);
+	}
+	
+	public List<DAOUser> getUser(){
+		//List<DAOUser> users=new ArrayList<>();
+		//Iterable<DAOUser> user=userDao.findAll();
+		//for(DAOUser duser:user) {
+			//users.add(duser);
+		//}
+		return userDao.findAll();
 	}
 }

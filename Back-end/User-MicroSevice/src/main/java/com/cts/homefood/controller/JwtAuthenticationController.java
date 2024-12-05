@@ -1,5 +1,7 @@
 package com.cts.homefood.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -8,12 +10,15 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.cts.homefood.config.JwtTokenUtil;
+import com.cts.homefood.model.DAOUser;
 import com.cts.homefood.model.JwtRequest;
 import com.cts.homefood.model.JwtResponse;
 import com.cts.homefood.model.UserDTO;
@@ -62,5 +67,19 @@ public class JwtAuthenticationController {
 		} catch (BadCredentialsException e) {
 			throw new Exception("INVALID_CREDENTIALS", e);
 		}
+	}
+	
+	
+	
+	
+	@GetMapping("/profile/{id}")
+	public DAOUser displayProfile(@PathVariable long id) {
+		return userDetailsService.getProfile(id);
+		
+	}
+	
+	@RequestMapping(value="/get",method=RequestMethod.GET)
+	public List<DAOUser> get(){
+		return userDetailsService.getUser();
 	}
 }

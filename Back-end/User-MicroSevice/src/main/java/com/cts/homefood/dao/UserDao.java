@@ -1,5 +1,7 @@
 package com.cts.homefood.dao;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
@@ -15,5 +17,7 @@ public interface UserDao extends CrudRepository<DAOUser, Integer> {
 	int get_uid(String username);
 	
 	
+	DAOUser findById(long id);
 	
+	List<DAOUser> findAll();
 }
