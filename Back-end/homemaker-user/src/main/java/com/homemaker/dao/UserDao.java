@@ -32,4 +32,6 @@ public interface UserDao extends CrudRepository<DAOUser, Integer> {
 	
 	
 	DAOUser findById(long id);
+	List<DAOUser> findAll();
+
 }

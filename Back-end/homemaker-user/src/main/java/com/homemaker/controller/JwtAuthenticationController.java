@@ -97,4 +97,7 @@ public class JwtAuthenticationController {
 	public DAOUser displayProfile(@PathVariable long id) {
 		return userDetailsService.getProfile(id);
 	}
+
+	@GetMapping("/get")
+	public List<DAOUser> getDetails() {return userDetailsService.getDetails();}
 }
