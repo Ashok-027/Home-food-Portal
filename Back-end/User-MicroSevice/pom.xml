@@ -9,11 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cts</groupId>
-	<artifactId>User-MicroSevice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>User-MicroSevice</name>
-	<description>Handson</description>
+	<artifactId>User-Service</artifactId>
+	<version>REL1.0</version>
+	<name>User-MicroService</name>
+	<description>User Service</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -47,6 +46,25 @@
 <!--			<artifactId>mysql-connector-java</artifactId>-->
 <!--		</dependency>-->
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!-- Optional: If you have multiple main classes, specify it here -->
+				<!-- <configuration>
+                    <mainClass>com.yourpackage.YourApplicationMainClass</mainClass>
+                </configuration> -->
+			</plugin>
+		</plugins>
+	</build>
 
 	
 
