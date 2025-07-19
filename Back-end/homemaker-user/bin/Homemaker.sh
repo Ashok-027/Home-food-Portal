@@ -10,7 +10,8 @@ JAR_NAME="homemaker-user-REL1.0.jar"
 # Set the directory where your JAR file is located.
 # IMPORTANT: If running on Linux/WSL, ensure this is a valid Unix-style path (e.g., /opt/app/target/).
 # The provided path '/C/GitHub-Projects/...' is typical for Git Bash on Windows.
-JAR_DIR="/C/GitHub-Projects/Home-Food/Home-food-Portal/Back-end/homemaker-user/target/"
+JAR_DIR="/C/GitHub-Projects/Home-Food/Home-food-Portal/Back-end/homemaker-user/target/" #Change this Path according to your local setup
+LOG_PATH="/C/GitHub-Projects/Home-Food/logs" #Change this Path according to your local setup
 
 # Full path to the JAR file
 JAR_PATH="${JAR_DIR}${JAR_NAME}"
@@ -21,10 +22,10 @@ JAVA_MEMORY_OPTS="-server -Xmx64m -Xms512m"
 # --- Script Control Files ---
 # PID file to store the Process ID of the running Java application.
 # This allows the 'stop' command to find and terminate the process.
-PID_FILE="/C/GitHub-Projects/Home-Food/logs/app.pid"
+PID_FILE="${LOG_PATH}/homemaker.pid"
 
 # Log file for the application's standard output and error.
-LOG_FILE="/C/GitHub-Projects/Home-Food/logs/app.log"
+LOG_FILE="${LOG_PATH}/homemaker_logs.log"
 
 # --- Functions ---
 
